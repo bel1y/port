@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Gamix-G.svg" class="linkimg">
+    <title>Gamix-G</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="navbar_big">
+        <div class="nabar_img">
+            <img src="./Gamix-G.svg" alt="">
+        </div>
+        <div class="nabar_text">
+            <p>Home</p>
+            <p>Games</p>
+            <p>About</p>
+            <p>Contact</p>
+            <button>Get Started </button>
+        </div>
+        <div class="navbar_mediya">
+            <i class='bx bx-menu-alt-right' onclick="openNavbar()"></i>
+            <div class="navbar_mediya_text">
+                <i class='bx bx-x' onclick="closeNavbar()"></i>
+            <p class="p">Home</p>
+            <p class="p1">Games</p>
+            <p class="p2">About</p>
+            <p class="p3">Contact</p>
+            <button>Get Started </button>  
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script>
+        function openNavbar() {
+            document.querySelector(".navbar_mediya_text").style="right:0%"
+        }
+        function closeNavbar() {
+            document.querySelector(".navbar_mediya_text").style="right:-1000%"
+        }
+    </script>
+</body>
+</html>
